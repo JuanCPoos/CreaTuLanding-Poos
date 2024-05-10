@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 
 const Navbar = () => {
   return (
@@ -18,7 +21,7 @@ const Navbar = () => {
           <Link to="/category/clothing">Ropa</Link>
         </li>
       </ul>
-      <button className="cart-button">
+      <button className="cart-button"><FontAwesomeIcon icon={faShoppingCart} />
         <CartWidget />
       </button>
     </nav>
